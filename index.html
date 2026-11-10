@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupido Riviera | San Valentín</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js"></script>
+</head>
+<body>
+
+    <div class="bg-animation"></div>
+
+    <main class="glass-container">
+        <header>
+            <div class="logos-header">
+                
+                <img src="logo-nivara.jpg" alt="Nivara Tech" class="logo-startup">
+            </div>
+
+            <div class="logo-area" style="margin-top: 10px;">🏹</div>
+            <h1 class="main-title">Cupido Riviera</h1>
+            <p class="subtitle">Rosas eternas para alguien especial</p>
+        </header>
+
+        <section id="tienda">
+            <h2 class="section-title">Elige tu detalle</h2>
+            < class="productos-grid">
+                
+                <div class="card" onclick="seleccionarProducto(this, 'Ramo Queen', 7, 250)">
+                    <img src="producto1.jpg" alt="Ramo Corona" class="card-img-real">
+                    <div class="card-info">
+                        <h3>Ramo Queen 👑</h3>
+                        <p>7 Rosas + Corona + Mariposas</p>
+                        <span class="precio">$507</span>
+                    </div>
+                </div>
+
+                <div class="card" onclick="seleccionarProducto(this, 'Girasol Love', 8, 180)">
+                    <img src="producto2.jpg" alt="Girasol" class="card-img-real">
+                    <div class="card-info">
+                        <h3>Girasol Love 🌻</h3>
+                        <p>1 Girasol + 8 Rosas Rojas</p>
+                        <span class="precio">$580</span>
+                    </div>
+                </div>
+
+                <div class="card" onclick="seleccionarProducto(this, 'Buchón Gold', 24, 350)">
+                    <img src="producto3.jpg" alt="Ramo Amarillo" class="card-img-real">
+                    <div class="card-info">
+                        <h3>Buchón Gold ✨</h3>
+                        <p>24 Rosas + Mariposas 3D</p>
+                        <span class="precio">$1600</span>
+                    </div>
+                </div>
+
+                <div class="card" onclick="seleccionarProducto"(this , `rosa suelto`, 1, 25)>
+                    <img src="producto4.jpg" alt="Rosa Suelta" class="card-img-real">
+                    <div class="card-info">
+                        <h3>Rosa Suelta 🌹</h3>
+                        <p>1 Rosa a elegir</p>
+                        <span class="precio">$25</span>
+                    </div>
+                </div>
+
+                <div class="card" onclick="seleccionarProducto(this, 'Detalle Especial', 1, 150)">
+                    <img src="producto5.jpg" alt="Detalle Especial" class="card-img-real">
+                    <div class="card-info">
+                        <h3>Rosa suelta con luces 🌟</h3>
+                        <p>Globo + Peluche + Tarjeta</p>
+                        <span class="precio">$150</span>
+                    </div>
+                </div>
+
+                </div class=card" onclick="seleccionarProducto(this, 'Caja Sorpresa', 1, 300)">
+                    <img src="producto6.jpg" alt="Caja Sorpresa" class="card-img-real">
+                    <div class="card-info">
+                        <h3>Caja Sorpresa 🎁</h3>
+                        <p>Rosas + Peluche + Chocolates</p>
+                        <span class="precio">$300</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>
+                Desarrollado con ❤️ por 
+                <a href="https://instagram.com/as.ange1" target="_blank">Nivara</a>
+            </p>
+            <p class="copyright">© 2026 Prepa Riviera</p>
+        </footer>
+
+    </main>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

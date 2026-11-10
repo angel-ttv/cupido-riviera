@@ -1,0 +1,114 @@
+:root {
+    --primary: #ff4757;
+    --text: #2f3542;
+    --glass: rgba(255, 255, 255, 0.55); /* Un poco más opaco para leer mejor */
+    --glass-border: rgba(255, 255, 255, 0.8);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    min-height: 100vh;
+    margin: 0;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Animación de fondo (Igual que la tienda) */
+.bg-animation {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: -1;
+    background: radial-gradient(circle at 50% 10%, #ffdde1, transparent 60%),
+                radial-gradient(circle at 10% 90%, #ee9ca7, transparent 60%);
+}
+
+.glass-container {
+    background: var(--glass);
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    height: fit-content;
+}
+
+.admin-width { width: 100%; max-width: 1000px; }
+
+header { text-align: center; margin-bottom: 30px; }
+h1 { color: var(--primary); margin: 5px 0; }
+.logo-area { font-weight: bold; color: #fff; background: var(--primary); display: inline-block; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; }
+
+/* --- TABLA --- */
+.table-responsive {
+    overflow-x: auto; /* Permite scroll horizontal en celular */
+    border-radius: 15px;
+    background: rgba(255,255,255,0.6);
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Ancho mínimo para que no se aplaste */
+}
+
+.admin-table th {
+    background: var(--primary);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.admin-table td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    vertical-align: middle;
+    font-size: 0.9rem;
+}
+
+.admin-table tr:last-child td { border-bottom: none; }
+.admin-table tr:hover { background: rgba(255,255,255,0.5); }
+
+/* --- ETIQUETAS (BADGES) --- */
+.badge {
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.75rem;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.badge-alumno { background: #dff9fb; color: #130f40; border: 1px solid #c7ecee; }
+.badge-profe { background: #ffcccc; color: #b33939; border: 1px solid #ffb8b8; }
+
+/* --- BOLITA DE COLOR --- */
+.color-dot {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* --- BOTÓN COMPLETAR --- */
+.btn-check {
+    background: #2ed573;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-check:hover { background: #26af61; transform: scale(1.05); }
+
+footer { text-align: center; margin-top: 20px; font-size: 0.8rem; color: #666; }
